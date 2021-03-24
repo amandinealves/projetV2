@@ -3,6 +3,7 @@ package fr.cesi.projetV2.servlet;
 import fr.cesi.projetV2.business.Annonce;
 import fr.cesi.projetV2.business.Entreprise;
 import fr.cesi.projetV2.service.*;
+import fr.cesi.projetV2.service.impl.AnnonceServiceImpl;
 import fr.cesi.projetV2.service.impl.EntrepriseServiceImpl;
 import fr.cesi.projetV2.service.impl.EtudiantServiceImpl;
 import fr.cesi.projetV2.service.impl.UtilisateurServiceImpl;

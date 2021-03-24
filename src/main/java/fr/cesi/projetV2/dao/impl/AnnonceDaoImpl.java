@@ -38,7 +38,6 @@ public class AnnonceDaoImpl implements AnnonceDao {
             annonce.setObjet(rs.getString(2));
             annonce.setLettreMotivation(rs.getString(3));
             annonce.setEtudiant(etudiantDao.searchByID(idEtudiant));
-            annonce.setEntreprise(entrepriseDao.searchByIDUti(idEtudiant));
             annonces.add(annonce);
         }
         return annonces;

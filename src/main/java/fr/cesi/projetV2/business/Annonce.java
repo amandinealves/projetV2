@@ -12,14 +12,6 @@ public class Annonce {
         // TODO Auto-generated constructor stub
     }
 
-    public Entreprise getEntreprise() {
-        return entreprise;
-    }
-
-    public void setEntreprise(Entreprise entreprise) {
-        this.entreprise = entreprise;
-    }
-
     public Etudiant getEtudiant() {
         return etudiant;
     }

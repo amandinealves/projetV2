@@ -1,6 +1,7 @@
 package fr.cesi.projetV2.servlet;
 
 import fr.cesi.projetV2.service.AnnonceService;
+import fr.cesi.projetV2.service.impl.AnnonceServiceImpl;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
