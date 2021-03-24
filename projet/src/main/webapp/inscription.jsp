@@ -58,7 +58,7 @@
                 </div>
                 <div class=""form-group row"">
                     <div class="col">
-                        <label for="SITE_ENTREPRISE">Domaine activité :</label> <input type="text"
+                        <label for="SITE_ENTREPRISE">Site entreprise :</label> <input type="text"
                                                                                         class="form-control" name="SITE_ENTREPRISE" id="SITE_ENTREPRISE"
                                                                                         placeholder="Entrez votre site" required>
                     </div>

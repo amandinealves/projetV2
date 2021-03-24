@@ -59,9 +59,7 @@ public class InscriptionEtudiantServlet extends HttpServlet {
         String prenom = request.getParameter("PRENOM");
         String htmlDate = request.getParameter("DATE_NAISSANCE");
         Date dateNaissance = Date.valueOf(htmlDate);
-        String ecole = request.getParameter("ECOLE");
-        String diplome = request.getParameter("DIPLOME");
-        String idStatut = request.getParameter("STATUT");
+          String idStatut = request.getParameter("STATUT");
        // Long idStatut = Long.getLong(htmlStatut);
         String idUtilisateur = request.getParameter("ID_UTILISATEUR");
         //Long idUtilisateur = Long.getLong(htmlUti);

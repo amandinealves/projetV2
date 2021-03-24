@@ -14,6 +14,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.sql.Date;
 
 @WebServlet(name = "InscriptionServlet", value = "/InscriptionServlet")
 public class InscriptionServlet extends HttpServlet {
@@ -43,13 +44,21 @@ public class InscriptionServlet extends HttpServlet {
         System.out.println(utilisateur.getIdUtilisateur());
         if (utilisateur != null){
             HttpSession	session = request.getSession();
+            Lon idUtilisateur = utilisateur.getIdUtilisateur();
             switch (typeUti) {
                 case "1":
-                    Etudiant etudiant = es.ajouterEtudiant(utilisateur.getIdUtilisateur());
+                    String nom = request.getParameter("NOM");
+                    String prenom = request.getParameter("PRENOM");
+                    String htmlDate = request.getParameter("DATE_NAISSANCE");
+                    Date dateNaissance = Date.valueOf(htmlDate);
+                    String ecole = request.getParameter("ECOLE");
+                    String diplome = request.getParameter("DIPLOME");
+
+                    Etudiant etudiant = es.ajouterEtudiant();
                     session.setAttribute("etudiant",etudiant);
                      break;
                 case "2":
-                    Entreprise entreprise = ents.ajouterEntreprise(utilisateur.getIdUtilisateur());
+                    Entreprise entreprise = ents.ajouterEntreprise();
                     session.setAttribute("entreprise",entreprise);
                     //response.sendRedirect("InscriptionEntrepriseServlet");
                     //request.getRequestDispatcher("inscriptionEntreprise.jsp").forward(request, response);
