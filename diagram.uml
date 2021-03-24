@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="144.0" y="180.0">fr.cesi.projetV2.business.Annonce</node>
+    <node x="132.0" y="90.0">fr.cesi.projetV2.business.Entreprise</node>
+    <node x="127.99999999999996" y="0.0">fr.cesi.projetV2.business.Utilisateur</node>
+    <node x="0.0" y="255.0">fr.cesi.projetV2.business.Statut</node>
+    <node x="-121.0" y="106.0">fr.cesi.projetV2.business.Etudiant</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="fr.cesi.projetV2.business.Entreprise" target="fr.cesi.projetV2.business.Utilisateur">
+      <point x="-32.000000000000014" y="-15.0" />
+      <point x="163.99999999999997" y="70.0" />
+      <point x="184.66666666666663" y="70.0" />
+      <point x="-11.333333333333329" y="15.0" />
+    </edge>
+    <edge source="fr.cesi.projetV2.business.Utilisateur" target="fr.cesi.projetV2.business.Annonce">
+      <point x="34.000000000000014" y="15.0" />
+      <point x="229.99999999999997" y="60.0" />
+      <point x="270.5" y="60.0" />
+      <point x="270.5" y="150.0" />
+      <point x="222.0" y="150.0" />
+      <point x="26.0" y="-15.0" />
+    </edge>
+    <edge source="fr.cesi.projetV2.business.Annonce" target="fr.cesi.projetV2.business.Entreprise">
+      <point x="-8.666666666666671" y="-15.0" />
+      <point x="187.33333333333331" y="140.0" />
+      <point x="164.0" y="140.0" />
+      <point x="-32.0" y="15.0" />
+    </edge>
+    <edge source="fr.cesi.projetV2.business.Etudiant" target="fr.cesi.projetV2.business.Utilisateur">
+      <point x="-28.0" y="-15.0" />
+      <point x="28.0" y="50.0" />
+      <point x="139.3333333333333" y="50.0" />
+      <point x="-56.66666666666667" y="15.0" />
+    </edge>
+    <edge source="fr.cesi.projetV2.business.Annonce" target="fr.cesi.projetV2.business.Etudiant">
+      <point x="-43.33333333333333" y="-15.0" />
+      <point x="152.66666666666666" y="160.0" />
+      <point x="28.0" y="160.0" />
+      <point x="-28.0" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="149.0" y="95.0" />
+  <SelectedNodes>
+    <node>fr.cesi.projetV2.business.Etudiant</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
